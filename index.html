@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>VancCalc</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+      min-height: 100vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #name {
+      color: black;
+      font-weight: 400;
+    }
+
+    #title {
+      color: navy;
+    }
+
+    #linkedin {
+      color: gray;
+      font-size: 24px;
+    }
+
+    #container {
+      background-color: white;
+      width: 400px;
+      max-width: 80vw;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+    }
+    #container:hover {
+      transform: scale(1.5);
+      transition: 0.2s;
+    }
+
+    .section {
+
+    }
+
+    #top-section {
+      height: 200px;
+      background-image: url(https://images.unsplash.com/photo-1523245332310-ff40ff34a419?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    #bottom-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="top-section">
+    </div>
+    <div id="bottom-section">
+      <h1 id="name">Morrigan Dearman</h1>
+      <h2 id="title">PharmD Candidate</h2>
+      <a id="linkedin" href="https://www.linkedin.com/in/mdearmann"
+        target="_blank"
+        ><i class="fa fa-linkedin-square"></i></a>
+    </div>
+  </div>
+</body>
+</html>
