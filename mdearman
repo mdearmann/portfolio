@@ -1,0 +1,184 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morrigan Dearman Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+    #container {
+      display: flex;
+      width: 750px;
+      height: 500px;
+      max-width: 90vw;
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      border-radius: 20px;
+      overflow: scroll;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
+
+    /* Sidebar styling */
+    #sidebar {
+      background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      width: 175px;
+      height: flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 40px;
+      gap: 20px;}
+
+    #sidebar button {
+      background: none;
+      border: none;
+      color: #433;
+      font-size: 1.2em;
+      font-weight: 500;
+      padding: 15px 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      border-radius: 6px;
+      width: 80%;
+      font-family: 'Poppins', sans-serif;}
+
+    #sidebar button:hover {
+      background-color: #FFF6E9 ;
+      transform: scale(1.025);}
+
+    #sidebar button.active {
+      background-color: # #FFF6E9;}
+
+    /* Main content area styling */
+    #content {
+      flex: 1;
+      padding: 50px;}
+
+    #top-section {
+      height: 170px;
+      background-image: url("https://i.pinimg.com/control2/736x/3c/bd/b7/3cbdb7b8846923f83d7b5ee58b8beb3f.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      border-radius: 15px;}
+
+    #bottom-section {
+      text-align: center;
+      padding-top: 70px;
+    padding-bottom: 50px;}
+
+    #name {
+      color: #433;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin: 100px 0;}
+
+    #title {
+      color: #666;
+      font-size: 1.1em;
+      margin-top:-80px;
+      margin-bottom: 10px;}
+
+    .content-section {
+      display: none;
+      font-size: 1em;
+      color: #433;}
+
+    .content-section.active {display: block;}
+    .cv-link {
+      color: #0077b5;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 10px;
+      display: inline-block;
+      transition: color 0.3s;}
+
+    .cv-link:hover {color: #005582;}
+
+    /* Mobile styling */
+    @media (max-width: 767px) {
+      #container {
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;}
+
+      #sidebar {
+        flex-direction: row;
+        width: 100%;
+        padding: 10px;
+        gap: 10px;}
+
+      #sidebar button {
+        font-size: 0.9em;
+        padding: 10px 5px;
+        width: auto;
+        flex-grow: 1;}
+
+      #top-section {height: 150px;}
+      #bottom-section {padding-top: 50px;}
+      #name {font-size: 1.2em;}
+      #title {font-size: 1em;} 
+    }
+  </style>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+      document.querySelectorAll('#sidebar button').forEach(button => {
+        button.classList.remove('active');
+      });
+      document.getElementById(sectionId + '-button').classList.add('active'); }
+  </script>
+
+  <body>
+    <div id="container">
+      <!-- Sidebar with buttons -->
+      <div id="sidebar">
+        <button id="about-button" onclick="showSection('about')">About Me</button>
+        <button id="cv-button" onclick="showSection('cv')">CV</button>
+
+      </div>
+      <!-- Main content area -->
+      <div id="content">
+        <div id="top-section">
+        <div id="bottom-section">
+          <h1 id="name">Morrigan Dearman</h1>
+          <h2 id="title">P4 Student Pharmacist<br>University of South Carolina</h2>
+
+          <!-- About Me Section -->
+          <div id="about" class="content-section">
+            <p>My name is Morrigan Dearman and I am a fourth-year pharmacy student at the University of South Carolina. 
+              Through my diverse clinical experiences, I have developed a profound interest in emergency medicine and critical care pharmacy, where split-second decisions and precise medication management directly impact patient outcomes. My rotation in the Emergency Department, where I was actively involved in code responses, stroke alerts, and rapid sequence intubations, solidified my passion for acute care pharmacy. This interest naturally extends into critical care, particularly through my CVICU experience, where I witnessed the intricate balance of managing complex medication regimens for critically ill patients. Complementing my acute care focus, I have discovered a parallel passion for psychiatric pharmacy, sparked during my rotation at Bryan Psychiatric Hospital where I conducted medication use evaluations for mood stabilizers. Through my clinical experiences, I've developed a strong interest in managing critically ill patients while maintaining a special focus on those with severe mental illness, especially in crisis situations. I find the intersection of emergency medicine and psychiatric pharmacy particularly compelling, as it represents a unique space where acute intervention meets long-term therapeutic management. 
+
+              During my initial years as a clinical pharmacist, I aim to complete both PGY1 and PGY2 residency training, with a focus on emergency medicine and critical care to build a strong foundation in acute patient care. Within my first five years of practice, I plan to establish myself as a trusted member of the emergency department team, developing expertise in managing high-acuity patients while building collaborative relationships with physicians, nurses, and other healthcare providers. My long-term goal is to pursue a PGY2 in Emergency Medicine/Critical Care while also working toward Board Certified Psychiatric Pharmacist (BCPP) certification, to develop specialized knowledge in treating patients with schizophrenia, bipolar disorder, and neurocognitive disorders like dementia and Alzheimer's. I believe this unique combination will be particularly valuable when managing agitated patients in emergency settings and addressing psychiatric complications in critically ill patients. This advanced training will position me to develop innovative protocols for managing psychiatric emergencies in the ED setting and establish a specialized consultation service bridging emergency medicine and psychiatric care. Looking ahead, I envision applying this combined knowledge to enhance emergency and critical care services while serving as a resource for complex psychiatric cases in acute care settings. As I progress in my career, I aim to contribute to the profession through precepting pharmacy students and residents, conducting research in emergency medicine and psychiatric pharmacy, and taking on leadership roles in professional organizations. These goals reflect my commitment to advancing patient care at the intersection of acute medicine and mental health while contributing to the development of future pharmacy practitioners.
+</p>
+            <p>Please reach out at my email listed below: <a href=" mailto:mdearman@email.sc.edu">mdearman@email.sc.edu</a>.</p>
+          </div>
+          <!-- CV Section -->
+          <div id="cv" class="content-section">
+            <p>View my CV below:</p>
+            <a class="cv-link" href="https://docs.google.com/document/d/1e_Kih019QTnJ4BKuqbMVzlXMjM1C-iUB8uo3dt41qhE/edit?usp=sharing" target="_blank">View CV</a>
+          </div>
+
+  </div></div></div></div><div id="idme-shop-extension-popup" hidden="">
+        <div id="idme-shop-extension-popup-loading">
+        </div>
+      </div><div id="idme-shop-extension-popup" hidden="">
+        <div id="idme-shop-extension-popup-loading">
+        </div>
+      </div></body>
+  </head>
